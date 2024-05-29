@@ -24,6 +24,16 @@ plugins {
   id "me.champeau.jmh" version "0.7.0" apply false
   id 'org.gradle.playframework' version '0.13' apply false
   id 'info.solidsoft.pitest' version '1.9.11'  apply false
+
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "ImanolMarana_dd-trace-java-playtest"
+    property "sonar.organization", "imanolmarana"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 description = 'dd-trace-java'
