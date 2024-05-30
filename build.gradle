@@ -28,7 +28,7 @@ plugins {
   id "org.sonarqube" version "3.3"
 }
 
-sonar {
+sonarqube {
   properties {
     property "sonar.projectKey", "ImanolMarana_dd-trace-java-playtest"
     property "sonar.organization", "imanolmarana"
